@@ -1,12 +1,27 @@
 .navbar-lewagon {
   justify-content: space-between;
+  align-items: center;
+  min-height: 8vh;
   background-color: transparent;
   transition: 0.5s background-color ease;
-  p  {
-    color: white;
-  }
   padding-left: 80px !important;
   padding-right: 80px !important;
+  img {
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  p  {
+    color: white;
+    padding: 0px 24px
+  }
+  .navbar-nav .nav-item > .nav-link {
+    color: white;
+    font-size: 1.25em;
+  }
+  .navbar-nav .active {
+    font-weight: bold;
+  }
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -24,7 +39,12 @@
   p  {
     color: black;
   }
+  .navbar-nav .nav-item > .nav-link {
+    color: black;
+  }
 }
+
+
 
 
 // TODO -> make NAVBAR responsive down the road

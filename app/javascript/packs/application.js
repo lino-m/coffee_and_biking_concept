@@ -27,8 +27,9 @@ import "bootstrap";
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
-import { initUpdateNavbarOnScroll } from '../components/navbar';
+import { initUpdateNavbarOnScroll, setActiveNavItem } from '../components/navbar';
 
 document.addEventListener('turbolinks:load', () => {
   initUpdateNavbarOnScroll();
+  setActiveNavItem();
 });

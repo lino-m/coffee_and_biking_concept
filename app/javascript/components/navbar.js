@@ -11,5 +11,16 @@ const initUpdateNavbarOnScroll = () => {
   }
 }
 
-export { initUpdateNavbarOnScroll };
+const setActiveNavItem = () => {
+  const items = document.querySelectorAll('.nav-item');
+  let path = window.location.pathname.replace(/^\//, "");
+  console.log(path);
 
+  items.forEach((item) => {
+    if (item.innerText.toLowerCase() === path) {
+      item.classList.add("active")
+    };
+  });
+}
+
+export { initUpdateNavbarOnScroll, setActiveNavItem };
