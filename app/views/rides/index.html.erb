@@ -1,7 +1,31 @@
-<div class="rides-banner">
-  <h1>Rides</h1>
+<div class='rides-banner'>
+  <h1>RIDES</h1>
 </div>
-<div class="container mt-40">
-  <h1>Rides#index</h1>
-  <p>Find me in app/views/rides/index.html.erb</p>
+
+<div class="container justify-content-center">
+  <h2 style="text-align:center"><strong>RIDES</strong></h2>
+
+  <hr>
+
+  <div class="rides-container">
+    <% @rides.each do |ride| %>
+      <div class='card-ride'>
+        <%= image_tag 'rides-placeholder.jpg' %>
+        <div class="ride-info">
+          <p class="headline"><%= ride.title.upcase %></p>
+          <p><%= ride.content[0..100] %> ...</p>
+          <div>
+            <%= link_to ride_path(ride.id) do %>
+              <p class="button button-info">Read more ...</p>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+
 </div>
+
+
+
+</div>
+

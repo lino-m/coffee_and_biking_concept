@@ -1,4 +1,6 @@
 class RidesController < ApplicationController
+  before_action :set_ride, only: :show
+
   def index
     @rides = Ride.all
   end
@@ -10,5 +12,11 @@ class RidesController < ApplicationController
   end
 
   def edit
+  end
+
+  private
+
+  def set_ride
+    @ride = Ride.find(params[:id])
   end
 end

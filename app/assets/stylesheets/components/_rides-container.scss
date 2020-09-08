@@ -1,0 +1,16 @@
+.rides-container {
+  display: flex;
+
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 860px;
+  margin: auto;
+}
+
+@media (max-width: 720px) {
+  .rides-container {
+    width: 580px;
+    overflow: hidden;
+    justify-content:center;
+  }
+}
