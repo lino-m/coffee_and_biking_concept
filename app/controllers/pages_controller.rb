@@ -3,6 +3,13 @@ class PagesController < ApplicationController
   def home
   end
 
+  def shops
+  end
+
   def about
+  end
+
+  def shops
+    @shops = Shop.all
   end
 end

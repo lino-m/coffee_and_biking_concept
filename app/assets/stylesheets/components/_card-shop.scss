@@ -1,0 +1,18 @@
+.card-shop {
+  display:flex;
+  margin-top:24px;
+  hr {
+    justify-content: left;
+    width: 80%;
+  }
+  th {
+    text-align: right;
+  }
+  td {
+    padding-left: 16px;
+  }
+  .shop-info .opening-hours {
+    width:180px;
+  }
+}
+

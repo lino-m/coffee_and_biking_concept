@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   #PAGES
   get '/about', to: 'pages#about'
+  get '/locations', to: 'pages#shops'
 
   #RIDES & EVENTS
   resources :rides do

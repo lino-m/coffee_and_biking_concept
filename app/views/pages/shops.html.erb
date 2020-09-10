@@ -1,0 +1,47 @@
+<div class="banner" style="background:linear-gradient(#D6C1A6, #ECDAC4, #D6C1A6)">
+
+  <div class="container-locations">
+    <div class="container-1">
+      <h1>Get coffinated and get going</h1>
+      <p>Find us end get your daily dose of goods vibes ... and dare we say it, even better coffee!</p>
+    </div>
+    <div class="container-2">
+    </div>
+  </div>
+
+</div>
+
+<div class="lacations-container">
+  <h2 style="text-align:center"><strong>SHOP LOCATIONS</strong></h2>
+
+  <hr>
+
+  <% @shops.each do |shop| %>
+    <div class="card-shop">
+      <div class="shop-info">
+        <% shop.id == 3 ? headline = 'Maastricht' : headline = 'Amsterdam' %>
+        <h3><%= headline %> X Coffee & Lovin'</h3>
+        <hr>
+        <p><%= shop.description %></p>
+        <div class="opening-hours">
+          <table>
+          <tr><th>Sunday</th><td>Closed</td></tr>
+          <tr><th>Monday</th><td>9am - 5pm</td></tr>
+          <tr><th>Tuesday</th><td>9am - 5pm</td></tr>
+          <tr><th>Wednesday</th><td>9am - 5pm</td></tr>
+          <tr><th>Thursday</th><td>9am - 5pm</td></tr>
+          <tr><th>Friday</th><td>9am - 5pm</td></tr>
+          <tr><th>Saturday</th><td>9am - 5pm</td></tr>
+          <tr><th>Sunday</th><td>9am - 5pm</td></tr>
+          </table>
+        </div>
+      </div>
+      <div class="shop-map">
+
+      </div>
+    </div>
+  <% end %>
+</div>
+
+
+ <%#= image_tag "IMG_0318.png", class: 'element-location-hero' %>
