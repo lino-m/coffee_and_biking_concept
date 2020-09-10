@@ -18,28 +18,42 @@
 
   <% @shops.each do |shop| %>
     <div class="card-shop">
-      <div class="shop-info">
+      <div class="shop-location">
         <% shop.id == 3 ? headline = 'Maastricht' : headline = 'Amsterdam' %>
         <h3><%= headline %> X Coffee & Lovin'</h3>
-        <hr>
-        <p><%= shop.description %></p>
-        <div class="opening-hours">
-          <table>
-          <tr><th>Sunday</th><td>Closed</td></tr>
-          <tr><th>Monday</th><td>9am - 5pm</td></tr>
-          <tr><th>Tuesday</th><td>9am - 5pm</td></tr>
-          <tr><th>Wednesday</th><td>9am - 5pm</td></tr>
-          <tr><th>Thursday</th><td>9am - 5pm</td></tr>
-          <tr><th>Friday</th><td>9am - 5pm</td></tr>
-          <tr><th>Saturday</th><td>9am - 5pm</td></tr>
-          <tr><th>Sunday</th><td>9am - 5pm</td></tr>
-          </table>
+      </div>
+      <hr>
+      <div class="shop-info">
+        <div class="shop-content">
+          <p><%= shop.description %></p>
+          <div class="shop-opening-hours">
+            <table>
+            <tr><th colspan="2">Opening Hours</th></tr>
+            <tr><th>Sunday</th><td>Closed</td></tr>
+            <tr><th>Monday</th><td>9am - 5pm</td></tr>
+            <tr><th>Tuesday</th><td>9am - 5pm</td></tr>
+            <tr><th>Wednesday</th><td>9am - 5pm</td></tr>
+            <tr><th>Thursday</th><td>9am - 5pm</td></tr>
+            <tr><th>Friday</th><td>9am - 5pm</td></tr>
+            <tr><th>Saturday</th><td>9am - 5pm</td></tr>
+            <tr><th>Sunday</th><td>9am - 5pm</td></tr>
+            </table>
+          </div>
+          <div class="shop-manager">
+           <%= image_tag "avatar-default.jpg", class: "shop-manager-profile" %>
+           <div class="description">
+             <p class="manager-name"><%= shop.shop_manager %></p>
+             <p class="lovely-note">SHOP MANAGER | Lovely Person</p>
+           </div>
+          </div>
+        </div>
+        <div class="shop-map">
+
         </div>
       </div>
-      <div class="shop-map">
-
-      </div>
     </div>
+
+
   <% end %>
 </div>
 

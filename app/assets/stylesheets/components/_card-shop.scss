@@ -1,18 +1,67 @@
 .card-shop {
-  display:flex;
-  margin-top:24px;
-  hr {
-    justify-content: left;
-    width: 80%;
+  margin: 32px auto;
+  padding: 8px;
+  h3 {
+    font-weight: bolder;
   }
-  th {
-    text-align: right;
+  .shop-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 24px;
+    width: 100%;
   }
-  td {
-    padding-left: 16px;
+  .shop-content {
+    width: 50%;
   }
-  .shop-info .opening-hours {
+  .shop-map {
+    width: 50%;
+    background-color: pink;
+    border: 10px solid gray;
+    border-radius: 5px;
+  }
+  .shop-info .shop-location {
+    // flex: stretch;
+  }
+  .shop-info .shop-opening-hours {
     width:180px;
+    margin-left: 120px;
+    th:first-child {
+      text-align: center;
+    }
+    th {
+      text-align: right;
+    }
+    td {
+      padding-left: 16px;
+    }
+  }
+  .shop-manager {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    background: linear-gradient(45deg, transparent 16%,black 15%, #1ECFCC 33%);
+    border-radius: 4px;
+    margin-top: 24px;
+    padding: 0px 8px;
+    img {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 16px;
+    }
+    p.manager-name {
+      font-weight: bold;
+      color: white;
+      margin-top: 8px;
+      margin-bottom: 0;
+    }
+    p.lovely-note {
+      margin-bottom:8px;
+      margin-left:32px;
+      font-size: 14px;
+      font-weight: bolder;
+    }
   }
 }
-
