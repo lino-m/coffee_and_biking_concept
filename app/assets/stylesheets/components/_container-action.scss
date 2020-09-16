@@ -1,0 +1,54 @@
+.container-action {
+    display: flex;
+    justify-content: space-between;
+    background: $light-gray;
+    color: black;
+    height: 318px;
+    width: 80%;
+    margin: 24px auto;
+    padding: 24px 16px;
+    border-radius: 4px;
+    .call-to-action {
+      display: flex;
+      background: white;
+      flex-direction: column;
+      width: 290px;
+      height: 270px;
+      p.call-description {
+        font-weight: bold;
+        padding: 16px 24px;
+        margin: 8px auto;
+        height: 60px;
+        text-align: center;
+      }
+      p {
+        margin: 16px;
+        padding: 8px;
+      }
+      hr {
+        width: 90%;
+        margin-bottom: 0;
+        margin-top: auto;
+        border: 1px solid gray;
+      }
+      .button-action {
+        background-color: #1ecfcc;
+        opacity: 0.6;
+        transition: opacity 0.3s ease;
+        width: 120px;
+        padding: 4px 16px;
+        border-radius: 50px;
+        color: white;
+        font-weight: 400;
+        margin-left: auto;
+        margin-right: 16px;
+        margin-bottom: 16px;
+        margin-top: 8px;
+      }
+      .button-action:hover {
+        text-decoration: none;
+        opacity: 1;
+        font-weight: bold;
+      }
+    }
+  }

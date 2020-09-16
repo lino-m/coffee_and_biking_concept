@@ -1,0 +1,21 @@
+.container-home-image-text-mood {
+  display:flex;
+  width: 80%;
+  margin: 24px auto;
+  img {
+    width: 520px;
+    height: 460px;
+    object-fit: cover;
+  }
+  .vision-and-mission {
+    margin: auto;
+    h2 {
+      font-size: 1.75rem;
+      font-weight: bolder;
+    }
+    p {
+      font-size:1.25em;
+    }
+  }
+
+}

@@ -22,6 +22,16 @@
   .navbar-nav .active {
     font-weight: bold;
   }
+  .fa-shopping-basket {
+    padding: 8px 16px;
+    opacity: 0.75;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+  }
+  .fa-shopping-basket:hover {
+      opacity: 1;
+  }
 }
 
 .navbar-lewagon .navbar-collapse {
